@@ -1,0 +1,203 @@
+"use strict";
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="d3d0370e-69fd-5bcc-83b3-58ed1b316fd2")}catch(e){}}();
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[69794],{120661:(e,t,n)=>{n.d(t,{II:()=>c,Ke:()=>g,NL:()=>u});var r=n(430751),i=n(429034),a=n(110811),o=n(702804),l=n(695988);let s=(0,o.createContext)(null);function c(e){let{variant:t,children:n}=e,i=(0,o.useMemo)(()=>Math.random().toString(36).slice(2),[]);return(0,r.jsx)(s.Provider,{value:(0,o.useMemo)(()=>({anonId:i,variant:t}),[t,i]),children:n})}let u=()=>(0,o.useContext)(s),d={[i.X.SIGNUP_VIEW_STATE]:{topic:l.Zf.LifecycleV0SignupViewState,action:"view"},[i.X.SIGNUP_VIEW_PAGE]:{topic:l.Zf.LifecycleV0SignupViewPage,action:"view"},[i.X.SIGNUP_PLAN_SELECTED]:{topic:l.Zf.LifecycleV0SignupPlanSelected,action:"select-plan"},[i.X.SIGNUP_CLICK_ELEMENT]:{topic:l.Zf.LifecycleV0SignupClickElement,action:"click"}},g=()=>{let e=u();return(0,o.useCallback)((t,n)=>{if(!e)return;let{variant:r,anonId:i}=e;a.co.track(t,{...n});let o=d[t];(0,l.om)(o.topic,{metrics_object:{actor_id:i,actor_type:"visitor",action:o.action,object:"new"===r?"new-signup":"signup"},is_new_page:"new"===r,...n},"vercel-app")},[e])}},405089:(e,t,n)=>{n.d(t,{J:()=>a});var r=n(160147),i=n(856211);function a(){let e=(0,i.d2)()||void 0,{pathname:t,utm:n}=(0,r.ki)()||{},a=new URLSearchParams(window.location.search).get("gclid");if(!a){let e=localStorage?.getItem("gclid");if(e){let{value:t,expiration:n}=JSON.parse(e);new Date(n)>new Date&&(a=t)}}return{sessionReferrer:e,landingPage:t,pageBeforeConversionPage:document.referrer,utm:{utmSource:n?.utm_source,utmMedium:n?.utm_medium,utmCampaign:n?.utm_campaign,utmTerm:n?.utm_term},...a&&{gclid:a}}}},235418:(e,t,n)=>{n.d(t,{XR:()=>a,f1:()=>i});var r=n(777696);let i=e=>(0,r.x)(e)&&"code"in e;function a(e){return i(e)&&"account_needs_verify"===e.code}},471919:(e,t,n)=>{n.d(t,{E:()=>a});var r=n(607579),i=n.n(r);async function a(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:3;return i()(e,{randomize:!1,factor:1,minTimeout:t>=5?1e3:250,maxTimeout:t>=5?1001:251,retries:t})}},324022:(e,t,n)=>{n.d(t,{e:()=>i,j:()=>a});var r=n(532224);function i(e){if(!e)return null;let t=e in r.CODES?r.CODES[e]:e;return t in r.ERRORS?r.ERRORS[t]:null}function a(e){let t;if("string"!=typeof e)return null;try{t=JSON.parse(decodeURIComponent(e))}catch(e){return null}return t.message=i(t.code)||"Unknown error.",t}},609287:(e,t,n)=>{n.d(t,{Dg:()=>o,Ir:()=>a,PM:()=>r,YN:()=>i,jq:()=>l});let r={PLACEHOLDER:"placeholder",INPUT:"input",LOADING_EMAIL:"loading-email",LOADING_GITHUB:"loading-github",LOADING_GITLAB:"loading-gitlab",LOADING_BITBUCKET:"loading-bitbucket",LOADING_SAML:"loading-saml",LOADING_PASSKEY:"loading-passkey",VERIFYING_EMAIL:"verifying",VERIFYING_EMAIL_OTP:"verifying-otp",LOADING_EMAIL_OTP:"loading-otp",ERROR_EMAIL_OTP:"error-otp",SUCCESS:"success",ERROR:"error",ACCOUNT_NEEDS_VERIFY_SMS:"account-needs-verify",SELF_SERVE_VERIFICATION:"self-serve-verification"},i=[r.LOADING_GITHUB,r.LOADING_GITLAB,r.LOADING_BITBUCKET,r.LOADING_SAML,r.LOADING_EMAIL,r.LOADING_PASSKEY,r.LOADING_EMAIL_OTP],a={github:"GitHub login",gitlab:"GitLab login",bitbucket:"Bitbucket login",git:"Git login",saml:"Saml login",email:"Email login",passkey:"Passkey login","github-custom-host":"GitHub login"},o="/new?onboarding=true",l="/new"},269794:(e,t,n)=>{n.d(t,{YN:()=>E.YN,PM:()=>E.PM,aC:()=>J});var r=n(702804),i=n(409158),a=n(852951),o=n(308259),l=n(62571),s=n(996577),c=n(200815),u=n(128895),d=n.n(u),g=n(821829),m=n(13527),p=n(478789),f=n(5985),h=n(777696),S=n(433335),v=n(120661),b=n(235418),w=n(405089),E=n(609287),y=n(90534),I=n(730582),P=n(342439),O=n.n(P);let R=(e,t)=>`<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <style>
+    /*!normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css*/
+    html {
+      -webkit-text-size-adjust: 100%;
+      height: -webkit-fill-available;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      align-items: center;
+      display: flex;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+      height: 100vh;
+      width: 100vw;
+      height: -webkit-fill-available;
+      width: -webkit-fill-available;
+      justify-content: center;
+      max-height: 100vh;
+      max-height: -webkit-fill-available;
+      min-height: 100vh;
+      min-height: -webkit-fill-available;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      position: fixed;
+      top: 0;
+    }
+    h1 {
+      font-size: 1.5em;
+      color: rgba(0, 0, 9);
+      font-weight: 600;
+      line-height: 32px;
+      margin: 0 0 24px 0;
+      text-align: center;
+      letter-spacing: -0.47px;
+    }
+    p {
+      color: rgba(0, 0, 9);
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin: 0 0 24px 0;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .backup-redirect {
+      font-size: 14px;
+      color: #666;
+      position: absolute;
+      bottom: 0;
+      animation: 0.2s ease 4s 1 delay;
+      animation-fill-mode: both;
+    }
+    a {
+      color: #333;
+      display: inline;
+    }
+    .spinner-wrapper {
+      height: 24px;
+      width: 24px;
+    }
+    .spinner {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      height: 24px;
+      width: 24px;
+    }
+    .spinner-bar {
+      -webkit-animation: spinner-spin 1.2s linear infinite;
+      animation: spinner-spin 1.2s linear infinite;
+      background: rgba(0, 0, 56);
+      border-radius: 5px;
+      height: 8%;
+      left: -10%;
+      position: absolute;
+      top: -3.9%;
+      width: 24%;
+    }
+    .spinner-bar:nth-child(1) {
+      animation-delay: -1.2s;
+      transform: rotate(0.0001deg) translate(146%);
+    }
+    .spinner-bar:nth-child(2) {
+      animation-delay: -1.1s;
+      transform: rotate(30deg) translate(146%);
+    }
+    .spinner-bar:nth-child(3) {
+      animation-delay: -1s;
+      transform: rotate(60deg) translate(146%);
+    }
+    .spinner-bar:nth-child(4) {
+      animation-delay: -0.9s;
+      transform: rotate(90deg) translate(146%);
+    }
+    .spinner-bar:nth-child(5) {
+      animation-delay: -0.8s;
+      transform: rotate(120deg) translate(146%);
+    }
+    .spinner-bar:nth-child(6) {
+      animation-delay: -0.7s;
+      transform: rotate(150deg) translate(146%);
+    }
+    .spinner-bar:nth-child(7) {
+      animation-delay: -0.6s;
+      transform: rotate(180deg) translate(146%);
+    }
+    .spinner-bar:nth-child(8) {
+      animation-delay: -0.5s;
+      transform: rotate(210deg) translate(146%);
+    }
+    .spinner-bar:nth-child(9) {
+      animation-delay: -0.4s;
+      transform: rotate(240deg) translate(146%);
+    }
+    .spinner-bar:nth-child(10) {
+      animation-delay: -0.3s;
+      transform: rotate(270deg) translate(146%);
+    }
+    .spinner-bar:nth-child(11) {
+      animation-delay: -0.2s;
+      transform: rotate(300deg) translate(146%);
+    }
+    .spinner-bar:nth-child(12) {
+      animation-delay: -0.1s;
+      transform: rotate(330deg) translate(146%);
+    }
+    @keyframes spinner-spin {
+      0% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 0.1;
+      }
+    }
+    @keyframes delay {
+      from {
+        transform: translateY(72px);
+      }
+      to {
+        transform: none;
+      }
+    }
+    ${"dark"===t?`
+          body {
+            color: rgb(237, 237, 237);
+            background: #000;
+          }
+          h1 {
+            color: rgb(237, 237, 237);
+          }
+          p {
+            color: #ddd;
+          }
+          .spinner-bar {
+            background: #eee;
+          }
+          `:""}
+  </style>
+  <body>
+    <div class="container">
+      <h1>Authenticating</h1>
+      <p>Vercel is validating your identity.<br />Please wait...</p>
+      <div class="spinner-wrapper">
+        <div class="spinner">
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+          <div class="spinner-bar"></div>
+        </div>
+      </div>
+      <p class="backup-redirect">
+        If you aren't automatically redirected,
+        <a href="${O()(e)}">click here</a>
+      </p>
+    </div>
+  </body>
+</html>`;var _=n(766781),L=n(110811),N=n(429034),A=n(532224),M=n(107366),T=n(340857),k=n(430911),U=n(944162),C=n(145052),x=n(471919);async function D(e,t){if("signup"===e&&t?.startsWith("/turborepo"))try{let e=await (0,T.P)();if(!e.user)return;if(!(await fetch("/api/turborepo-signup",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:e.user.email,heapUserId:(0,k.lM)(),heapIdentity:(0,k.uu)()})})).ok)throw Error("An unexpected error. Please try again later.")}catch{}}async function G(e){e&&e.length>0&&await (0,x.E)(()=>(0,p.Io)(a.zh,{method:"PATCH",body:{name:O()(e)}}))}async function j(e){["loading-github","loading-gitlab","loading-bitbucket"].includes(e)&&await (0,C.xb)({provider:e.split("-")[1],namespaceId:null})}function $(e){let t=new URL("/oauth/git",window.location.origin),n=e instanceof URLSearchParams?e:new URLSearchParams((0,M.c)(e));return t.search=n.toString(),t.toString()}function V(e){let{authType:t,baseUrl:n,mode:r,next:i,useRedirect:o=!1,params:l}=e,{next:s,ssoToken:c,...u}=l,d=i?.match(/^\/(?<scope>[^/]+)/)?.groups?.scope||null,g=$({next:o?s??i:s,scope:d,ssoToken:c}),m="saml"===t.toLowerCase()?a.fr:a.OK,p=function(e){if(!e)return{};let{sessionReferrer:t,landingPage:n,pageBeforeConversionPage:r,utm:i}=e,a={...i.utmSource&&{utmSource:i.utmSource},...i.utmMedium&&{utmMedium:i.utmMedium},...i.utmCampaign&&{utmCampaign:i.utmCampaign},...i.utmTerm&&{utmTerm:i.utmTerm}},o=Object.keys(a).length>0;return{...t&&{sessionReferrer:t},...n&&{landingPage:n},...r&&{pageBeforeConversionPage:r},...o&&{...a},...e.gclid&&{gclid:e.gclid}}}((0,w.J)());return`${m}${n}${(0,M.c)({mode:r,next:g,...u,..."saml"!==t?p:{},..."saml"!==t&&l.oppId?{opportunityId:l.oppId}:{}})}`}let B=Object.values(A.OTP_CODES);var H=n(410150);let J=function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"login",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},{state:n,dispatch:u,saveInput:P,verifySMS:O}=(0,_.F)(t),A=(0,o.t)(),M=(0,l.usePathname)(),T=(0,H.j)(),k=(0,s.useSearchParams)(),C=(0,S.s8)(k?.get("next")),x=(0,v.NL)(),J=(0,r.useRef)(d()),Y=(0,r.useRef)(t);(0,r.useEffect)(()=>{Y.current=t},[t]);let{data:F}=(0,m.aF)(),z=F?.user;!function(e,t){let n=(0,o.t)(),i=(0,l.usePathname)(),a=(0,s.useSearchParams)();(0,r.useEffect)(()=>{if(!a)return;let r=a.get(e);if(r&&i&&r&&!t(r)){let t=new URLSearchParams(a);t.delete(e),n.replace(`${i}?${t.toString()}`,void 0,{shallow:!0})}},[i,a,e,t,n])}("next",e=>!!(0,S.s8)(e));let{popup:K,openPopup:X,closePopup:Z}=function(e,t){let n=(0,r.useRef)(null),{theme:i}=(0,y.F)();(0,r.useEffect)(()=>()=>{n.current&&n.current.close(),n.current=null},[]);let a=(0,r.useCallback)((r,a)=>{n.current||(n.current=new I.Z({id:e,url:r,callbacks:{onOpen:()=>{t.onOpen?.(a)},onAbort:()=>{n.current=null,t.onAbort?.(a)},onClose:()=>{n.current=null,t.onClose?.(a)},onBlocked:()=>{n.current=null,t.onBlocked?.(a)}},prerenderHtml:R(r,i)}),n.current.open())},[e,t,i]),o=(0,r.useCallback)(function(){let e=arguments.length>0&&void 0!==arguments[0]&&arguments[0];n.current&&n.current.close(e),n.current=null},[]);return{popup:n.current,openPopup:a,closePopup:o}}("vercel-login-popup",{onOpen:e=>{let{authType:t}=e;u({loginState:E.PM[`LOADING_${t.toUpperCase()}`]})},onAbort:()=>{u({loginState:E.PM.INPUT})},onClose:()=>{u({loginState:E.PM.INPUT})},onBlocked:e=>{let{authType:t,redirectUrl:n}=e;u({loginState:E.PM[`LOADING_${t.toUpperCase()}`]}),window.location.assign(n)}});(0,r.useEffect)(()=>{if(!K&&(!("isReady"in A)||A.isReady)){if(k?.get("loginType")==="saml"&&"1"===k.get("confirmed")){u({loginState:E.PM.LOADING_SAML});let e=new URLSearchParams(k);T&&!e.has("teamSlug")&&e.set("teamSlug",T),T&&!C&&e.set("next",`/${T}`);let t=`${$(e)}`;A.push(t);return}if(k?.get("origin")==="saml"&&"/login"===M){u({loginState:E.PM.LOADING_SAML}),A.push(`/teams/connect?${k.toString()}`);return}A.query.token||n.loginState!==E.PM.PLACEHOLDER||u({loginState:E.PM.INPUT})}},[T,k,A,C,K,u,M,n.loginState]);let q=(0,r.useRef)(void 0);function W(n,r){let i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};q.current=n,u({loginError:null,loginState:E.PM[`LOADING_${n.toUpperCase()}`]});let a={authType:n,baseUrl:r,params:i,mode:e,next:C},o=V(a),l=V({...a,useRedirect:!0});if(!t.useRedirect){Z(!0),X(o,{redirectUrl:l,authType:n});return}window.location.href=l}function Q(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};W(e,"github"===e?"/login-with-github":`/${e}/connect`,t)}async function ee(){let e,t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};u({loginState:E.PM.LOADING_PASSKEY,loginError:null});let n=await fetch("/api/auth/webauthn/options"),r=await n.json();if(!("challenge"in r)){u({loginState:E.PM.ERROR,loginError:(0,i.normalizeError)(r.error)});return}try{e=await (0,c.oz)(r)}catch(e){u({loginState:E.PM.ERROR,loginError:{message:"Login with Passkey took too long or was cancelled. Please try again."}});return}let a=await fetch("/api/auth/webauthn/verify",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({ssoToken:t.ssoToken,...e})});if(!(await a.json()).verified){u({loginState:E.PM.ERROR,loginError:{message:"Login with Passkey failed. Please try again."}});return}await ei({...t,provider:"passkey",showAuthSuccess:!1})}async function et(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},r=t.email??n.email;if(!r){u({loginState:E.PM.ERROR,loginError:{code:"",message:"Please enter an email address."}});return}J.current();let o=new AbortController;J.current=()=>{o.abort()};try{u({loginState:E.PM.LOADING_EMAIL,loginError:null,email:r});let n=`${a.OK}/email`,{token:i}=await (0,p.Io)(n,{method:"POST",body:JSON.stringify({...t,attribution:(0,w.J)(),mode:e,email:r}),headers:{"Content-Type":"application/json"},throwOnHTTPError:!0});!function(e,t){try{if("signup"!==e||"email"!==t)return;L.co.track(N.X.SIGN_UP_INTENT,{source:E.Ir.email})}catch{}}(e,"email"),u({loginState:E.PM.VERIFYING_EMAIL_OTP,token:i,email:r})}catch(t){var l;if(!(0,h.V)(t))throw t;if("AbortError"===t.name)return;let e=(0,i.normalizeError)(t);"rate_limited"===e.code&&(e.message=e.message.replace(/ \(.*\)\.$/,".")),u({loginState:(l=n.loginState,(0,b.f1)(e)&&B.includes(e.code)&&l===E.PM.VERIFYING_EMAIL_OTP?E.PM.ERROR_EMAIL_OTP:E.PM.ERROR),loginError:e})}}async function en(e){try{u({loginState:E.PM.LOADING_EMAIL_OTP,loginError:null});let t=await (0,p.Io)(`${a.OK}/email/verify`,{body:JSON.stringify(e),headers:{"Content-Type":"application/json"},method:"POST",throwOnHTTPError:!0});delete globalThis.__loggedIn,await ei({...t,provider:"email",showAuthSuccess:!0})}catch(t){if((0,b.XR)(t))return O(t.smsVerificationToken);let e=(0,i.normalizeError)(t);"rate_limited"===e.code&&(e.message=e.message.replace(/ \(.*\)\.$/,".")),u({loginState:E.PM.ERROR_EMAIL_OTP,loginError:e})}}async function er(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},r=t.teamSlug??n.teamSlug??T;if(!r)return u({loginState:E.PM.ERROR,loginError:{code:"",message:"Please enter a Team slug."}});W("saml","",{next:C||`/${r}`,...t,teamId:r,mode:e})}async function ei(r){let{provider:i,showAuthSuccess:a,...o}=r;Z(!0),o.mode??=e,o.teamSlug??=n.teamSlug??T??void 0,o.next??=C,function(e){let{source:t,variant:n}=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};try{let r=t?E.Ir[t]:void 0;"signup"===e?(L.co.track(N.X.CREATE_ACCOUNT,{source:r,variant:n}),L.co.track(N.X.SIGN_UP,{source:r,variant:n}),(0,U.O)({eventName:"create_account",metadata:{source:r||""}})):"login"===e&&L.co.track(N.X.LOGIN,{source:r})}catch{}}(o.mode,{source:i,variant:x?.variant}),delete globalThis.__loggedIn,await (0,f.Hu)();let l=function(){let e=(0,g.bR)();return o.next?o.next:o.teamSlug?`/${o.teamSlug}`:e?`/${e}`:z?`/${z.username}`:"signup"===o.mode?E.jq:"/dashboard"}();if(D(o.mode,l),"signup"===o.mode&&await Promise.all([G(o.patchedSignupAccountName),j(n.loginState)]),a&&u({loginState:E.PM.SUCCESS}),Y.current.onAuthenticated){Y.current.onAuthenticated();return}t.skipDefaultRedirectOnSignup||("signup"===o.mode&&(l=E.Dg),setTimeout(()=>{window.location.href=new URL(l,window.location.href).href},300))}return!function(e,t){let n=(0,r.useRef)(t);(0,r.useEffect)(()=>{n.current=t},[t]);let i=(0,r.useCallback)(t=>{if(!e)return;let r=function(e,t){if(!t.source||t.source!==e?.popup||!t.data||"object"!=typeof t.data)return null;let n=t.data;return"vercel-verify-auth"!==n.source?null:n}(e,t);if(!r)return;let i=e.popup?.location.search,a=i?new URLSearchParams(i):null;n.current(r,a)},[e]);(0,r.useEffect)(()=>(window.addEventListener("message",i),()=>{window.removeEventListener("message",i)}),[i])}(K,async(e,t)=>{if(e.close){Z(!0),t?.get("origin")==="saml"&&A.push(`/teams/connect?${t.toString()}`);return}if(e.loginError&&Z(!0),e.loginState||e.loginError){let t={};e.loginState&&(t.loginState=e.loginState),e.loginError&&(t.loginError=e.loginError),u(t)}if(!e.success){u({loginState:e.loginState,loginError:e.loginError}),Y.current.onError?.();return}let n=t?.get("next");n=n?decodeURIComponent(n):null,await ei({next:e.next??n,provider:q.current??void 0,showAuthSuccess:!0})}),{saveInput:P,cancelLogin:function(){if(J.current(),u({loginState:E.PM.INPUT,loginError:null}),t.skipRouterRedirectOnCancel||!M)return;let e=new URLSearchParams;C&&e.set("next",C);let n=k?.get("isRequestAccess");n&&e.set("isRequestAccess",n);let r=k?.get("teamName");r&&e.set("teamName",r),A.replace(`${M}?${e.toString()}`)},loginWithEmail:et,loginWithPasskey:ee,loginWithSAML:er,loginWithGitHub:function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return Q("github",e)},loginWithGitLab:function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return Q("gitlab",e)},loginWithBitbucket:function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return Q("bitbucket",e)},loginWithGit:Q,loginWithOneTimePassword:en,state:n,dispatch:u,mode:e}}},766781:(e,t,n)=>{n.d(t,{F:()=>d,w:()=>c});var r=n(996577),i=n(532224),a=n(702804),o=n(324022),l=n(609287);function s(e,t){return Object.keys(t).some(n=>t[n]!==e[n])?{...e,...t}:e}function c(e){if(!e)return!1;let t=e.split(".");if(3!==t.length)return!1;try{return JSON.parse(atob(t[1])),!0}catch{return!1}}function u(e){let t=e?.get("token")??void 0;if(c(t)){let{email:e,error:n}=function(e){try{if(!e)throw Error();let t=JSON.parse(atob(e.split(".")[1])),n=Date.now()/1e3;if(t.exp<n)return{email:t.sub,error:{code:"used_or_expired",message:i.ERRORS.used_or_expired}};return{email:t.sub,error:null}}catch{return{email:void 0,error:{code:"invalid_jwt",message:i.ERRORS.invalid_jwt}}}}(t);return{token:t,email:e,loginState:n?l.PM.ERROR_EMAIL_OTP:l.PM.VERIFYING_EMAIL_OTP,loginError:n,isLoading:!1}}return{loginState:l.PM.PLACEHOLDER,loginError:null,isLoading:!0}}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=(0,r.useSearchParams)(),[n,i]=(0,a.useReducer)(s,{...u(t),...e.defaultState});return(0,a.useEffect)(()=>{let e=t?.get("loginError");e?i({loginState:l.PM.ERROR,loginError:(0,o.j)(e)}):t?.has("token")&&i(u(t))},[t]),(0,a.useEffect)(()=>{let e=n.loginState===l.PM.PLACEHOLDER||l.YN.includes(n.loginState);n.isLoading&&!e&&i({isLoading:e})},[n.loginState,n.isLoading]),{state:n,dispatch:i,saveInput:function(e,t){n.loginState===l.PM.ERROR?i({[e]:t,loginError:null}):i({[e]:t})},verifySMS(e){n.email&&i({loginState:l.PM.ACCOUNT_NEEDS_VERIFY_SMS,smsVerificationToken:e})}}}},410150:(e,t,n)=>{n.d(t,{j:()=>a});var r=n(431284),i=n(266726);function a(){let e=(0,r.useParams)(),t=function(){let e=(0,i.s)();return e?.get("teamSlug")??null}();return e?.teamSlug??t}},917629:(e,t,n)=>{n.d(t,{q:()=>r});function r(e){let t=2166136261n;for(let n=0;n<e.length;n++)t^=BigInt(e.charCodeAt(n)),t=BigInt.asUintN(32,16777619n*t);return Number(t)}},446416:(e,t,n)=>{n.d(t,{D9:()=>o,H8:()=>l,J7:()=>s,nk:()=>a});var r=n(124644),i=n(917629);let a="v_";function o(){return(0,r.x0)()}function l(e){if(e)return`${a}${e}`}function s(){return String((0,i.q)("1.0"))}},944162:(e,t,n)=>{n.d(t,{O:()=>s});var r=n(221798),i=n(148230),a=n(340857),o=n(196028),l=n(446416);function s(e){(async()=>{if(Number.isNaN(e.value))return;let t=(0,o.j)()?await (0,a.P)(null,{throwOnHTTPError:!1}):null,n=i.Z.get("visitor-id"),s={events:[{user:{userID:(0,l.H8)(t?.user?.uid),customIDs:{...n?{visitorId:n}:void 0}},time:Date.now(),...e}]};await (0,r.Z)("/api/stream/internal/statsig",s)})()}},430911:(e,t,n)=>{n.d(t,{WM:()=>i,lM:()=>a,uu:()=>o});var r=n(702804);function i(){return{userId:function(){let[e,t]=(0,r.useState)();return(0,r.useEffect)(()=>{t(a())},[]),e}(),identity:function(){let[e,t]=(0,r.useState)();return(0,r.useEffect)(()=>{t(o())},[]),e}()}}function a(){if(window?.heap&&"string"==typeof window.heap.userId)return window.heap.userId}function o(){if(window?.heap&&"string"==typeof window.heap.identity)return window.heap.identity}},160147:(e,t,n)=>{n.d(t,{$M:()=>d,ay:()=>c,ki:()=>g});var r=n(702804),i=n(612184),a=n.n(i),o=n(996577),l=n(962008);let s="lpid";function c(){(0,r.useEffect)(()=>{g()},[])}let u=()=>{let e=JSON.parse(sessionStorage.getItem("uval")||'{"currentUrl": "", "prevUrl": ""}');return window.location.href!==e.currentUrl&&(e.prevUrl=e.currentUrl,e.currentUrl=window.location.href,sessionStorage.setItem("uval",JSON.stringify(e))),{currentUrl:e.currentUrl||window.location.href,prevUrl:e.prevUrl}};function d(){let e=(0,o.usePathname)();(0,r.useEffect)(()=>{u()},[e])}function g(){let e=sessionStorage.getItem(s);try{null===e&&sessionStorage.setItem(s,window.location.href);let t=e||window.location.href,{pathname:n,searchParams:r}=a()(t,{require_protocol:!0})?new URL(t):t.startsWith("/")?new URL(t,window.location.origin):new URL(window.location.href),i=Object.fromEntries(r.entries()),o=(0,l.CY)(i),c=JSON.parse(localStorage?.getItem("utmValues")||'{"currentUtm": {}, "prevUtm": {}}');return(0===Object.keys(c.prevUtm).length||Object.values(c.prevUtm).every(e=>""===e))&&(c.prevUtm=o),c.currentUtm=o,localStorage?.setItem("utmValues",JSON.stringify(c)),{pathname:n,href:t,queryParams:i,utm:o,prevUtm:c.prevUtm}}catch(e){return console.error(e),null}}},221798:(e,t,n)=>{n.d(t,{Z:()=>a});var r=n(478789);let i=()=>Object.prototype.hasOwnProperty.call(globalThis,"navigator")&&"function"==typeof globalThis.navigator.sendBeacon,a=async(e,t)=>{if(i()){let n=t?new Blob([JSON.stringify(t)],{type:"application/json"}):void 0;return Promise.resolve(navigator.sendBeacon(e,n))}return(0,r.Io)(e.toString(),{method:"POST",headers:{"Content-Type":"application/json; charset=utf-8"},body:t}).then(()=>!0,()=>!1)}},433335:(e,t,n)=>{n.d(t,{rf:()=>i,s8:()=>a});var r=n(728903);let i=e=>{let{redirect:t,next:n}=e,r=new URL("/login","https://vercel.com");return n&&r.searchParams.set("next",n),t(`${r.pathname}${r.search}`)};function a(e){if(!e||!(0,r.x)(e))return null;let t=Array.isArray(e)?e[0]:e;return t?decodeURIComponent(t):null}},5985:(e,t,n)=>{n.d(t,{Hu:()=>o,K3:()=>l,ow:()=>a});var r=n(852951),i=n(221798);let a=()=>(0,i.Z)(r.aM),o=()=>fetch(r.aM,{method:"POST"}),l=()=>fetch(r.aM,{method:"DELETE"})}}]);
+//# debugId=d3d0370e-69fd-5bcc-83b3-58ed1b316fd2
